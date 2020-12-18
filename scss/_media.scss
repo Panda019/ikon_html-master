@@ -1,0 +1,48 @@
+// Small devices
+@media (min-width: 372px) {
+  .register__check-link {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .logo {
+    padding: 1.4rem 0;
+  }
+  .auth__login-check {
+    flex-direction: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// Average devices
+@media (min-width: 768px) {
+  .logo {
+    padding: 1.4rem 0 4rem;
+  }
+  .auth__form-title {
+    padding-bottom: 1.5rem;
+  }
+  .form__group-email {
+    margin-bottom: 1.9rem;
+  }
+}
+
+// Tablets
+@media (min-width: 992px) {
+}
+
+// Computers
+@media (min-width: 1140px) {
+}
+
+// Height
+@media (min-width: 1326px) and (min-height: 668px) {
+  .section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

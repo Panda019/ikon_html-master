@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  min-width: 300px;
+  color: $darkColor;
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Logo
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0.7rem 0;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  a {
+    color: $logo;
+    &:hover {
+      color: $logo;
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+}
+// Button
+.button {
+  border: none;
+  background-color: $button;
+  border-radius: 0.2rem;
+  color: $color;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  &:hover {
+    background-color: $buttonHover;
+    transition: 0.2s;
+  }
+}
+
+// Nav list
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Back
+.back {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 1.7rem 0;
+  a {
+    color: $darkColor;
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+    &:hover {
+      color: $darkColor;
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+}
+
+// Next
+.next {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 1.7rem 0rem;
+  a {
+    color: $darkColor;
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+    &:hover {
+      color: $darkColor;
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+}
+
+// Checkbox
+.form-check-input {
+  display: none;
+  &:checked + .form-check-label:before {
+    background-color: $button;
+    border: none;
+  }
+  &:checked + .form-check-label:after {
+    opacity: 1;
+  }
+}
+.form-check-label {
+  padding-left: 1rem;
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d6dae2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 3px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/svg/check.svg) no-repeat;
+    background-size: 24px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+// Progress
+.step__progress {
+  font-size: 1rem;
+  font-weight: 700;
+  span {
+    color: $subtext;
+  }
+}

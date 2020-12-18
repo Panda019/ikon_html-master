@@ -1,0 +1,176 @@
+// Login and registration
+.auth__login {
+  &-button {
+    width: 100%;
+    margin: 2.1rem 0 1.4rem;
+  }
+  &-register {
+    background-color: $border;
+    text-align: center;
+    padding: 0.7rem 0;
+    p {
+      padding-top: 0.7rem;
+    }
+  }
+  &-check {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.auth__form {
+  border: 2px solid $border;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.4rem;
+  &-link {
+    color: $button;
+    font-weight: bold;
+    &:hover {
+      color: $buttonHover;
+    }
+  }
+  &-title {
+    color: $darkColor;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  input {
+    height: 3.1rem;
+    border-color: #d6dae2;
+  }
+}
+
+.form-group {
+  label {
+    font-weight: 600;
+    color: $logo;
+  }
+}
+
+.form__check-link {
+  padding-left: 1rem;
+}
+.register__check-link {
+  padding-left: 1rem;
+}
+.form-control {
+  margin-bottom: 1rem;
+}
+.auth__register-group {
+  display: flex;
+}
+.form__group-firstName {
+  padding-right: 10px;
+  width: 50%;
+}
+.form__group-lastName {
+  width: 50%;
+}
+.form__group-password {
+  padding-right: 10px;
+  width: 50%;
+}
+.form__group-confirmPassword {
+  width: 50%;
+}
+
+// Password recovery
+.password__recovery {
+  border: 2px solid $border;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.4rem;
+}
+
+.recovery__form {
+  border: 2px solid $border;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.4rem;
+  &-link {
+    color: $button;
+    font-weight: bold;
+    &:hover {
+      color: $buttonHover;
+    }
+  }
+  &-title {
+    color: $darkColor;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  input {
+    height: 3.1rem;
+    border-color: #d6dae2;
+  }
+  &-button {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+// Ikon select
+.ikon {
+  &__list {
+    display: flex;
+    &-select {
+    }
+  }
+  &__type {
+    &-list {
+      display: flex;
+    }
+    &-select {
+      border: 2px solid $border;
+      border-radius: 4px;
+      margin-right: 1.4rem;
+      width: 13.9rem;
+      height: 21.6rem;
+      cursor: pointer;
+      img {
+        width: 12.5rem;
+        height: 11.9rem;
+      }
+      p {
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 2rem;
+      }
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__color {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-select {
+      border: 2px solid $border;
+      border-radius: 4px;
+      margin-right: 1.4rem;
+      width: 13.9rem;
+      height: 10rem;
+      position: relative;
+      cursor: pointer;
+      &:last-child {
+        margin-top: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.active {
+  border: 2px solid $button;
+}
